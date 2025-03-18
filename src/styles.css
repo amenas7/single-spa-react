@@ -122,3 +122,31 @@
   font-size: 14px;
   color: #666;
 }
+
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, color 0.2s;
+  margin-left: 15px;
+  color: #e74c3c; /* Changed from #666 to red */
+}
+
+.delete-button:hover {
+  background-color: #A6002F;
+  color: white;
+}
+
+.delete-button i {
+  font-size: 18px;
+}
+
+.trash-icon {
+  font-size: 20px;
+}
