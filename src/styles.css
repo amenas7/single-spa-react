@@ -1,11 +1,11 @@
 .react-title {
-  color: #00D1F7;
+  color: #00d1f7;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.img_loco_react{
-    width: 6%;
+.img_loco_react {
+  width: 6%;
 }
 
 .series-container {
@@ -83,7 +83,9 @@
   cursor: pointer;
 }
 
-.loading, .error, .no-series {
+.loading,
+.error,
+.no-series {
   text-align: center;
   padding: 40px;
   font-size: 18px;
@@ -112,7 +114,7 @@
 }
 
 .star.filled {
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .rating-number {
