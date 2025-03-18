@@ -1,3 +1,122 @@
-.react-title { 
-    background-color: skyblue;
+.react-title {
+  color: #00D1F7;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.img_loco_react{
+    width: 6%;
+}
+
+.series-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.series-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.series-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease, transform 0.5s cubic-bezier(0.2, 0.6, 0.3, 1);
+  position: relative;
+  opacity: 1;
+  transform: translateX(0);
+  will-change: transform, opacity;
+}
+
+.series-item.removing {
+  opacity: 0;
+  transform: translateX(-100%);
+  margin-bottom: -100px; /* This helps with the smooth collapse */
+}
+
+.series-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.series-image-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.series-image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.series-title {
+  flex-grow: 1;
+}
+
+.series-title h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.series-checkbox {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.series-checkbox label {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.loading, .error, .no-series {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #555;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.no-series {
+  font-style: italic;
+  color: #888;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.star {
+  color: #ddd;
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+.star.filled {
+  color: #FFD700;
+}
+
+.rating-number {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #666;
 }
